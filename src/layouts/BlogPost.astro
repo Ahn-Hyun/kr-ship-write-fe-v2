@@ -1,0 +1,178 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import References from '../components/References.astro';
+import TableOfContents from '../components/TableOfContents.astro';
+import ViewCounter from '../components/ViewCounter.astro';
+
+interface Heading {
+	depth: number;
+	slug: string;
+	text: string;
+}
+
+type Props = CollectionEntry<'blog'>['data'] & {
+	viewSlug?: string;
+	headings?: Heading[];
+	references?: string[];
+};
+
+const {
+	title,
+	description,
+	pubDate,
+	updatedDate,
+	heroImage,
+	seo,
+	author = 'Shipwrite Editorial Team',
+	viewSlug,
+	headings = [],
+	references = [],
+} = Astro.props as Props;
+const siteBase = Astro.site ? new URL(Astro.site).toString() : '';
+const canonicalUrl = seo?.canonical ? new URL(seo.canonical, Astro.site).toString() : undefined;
+const canonical = canonicalUrl && siteBase && canonicalUrl.startsWith(siteBase) ? canonicalUrl : undefined;
+---
+
+<html lang="en">
+	<head>
+		<BaseHead
+			title={seo?.ogTitle ?? title}
+			description={seo?.ogDescription ?? description}
+			image={heroImage?.src}
+			canonical={canonical}
+			ogTitle={seo?.ogTitle}
+			ogDescription={seo?.ogDescription}
+		/>
+		<style>
+			main {
+				width: calc(100% - 2em);
+				max-width: 100%;
+				margin: 0;
+			}
+			article {
+				width: 960px;
+				max-width: calc(100% - 2em);
+				margin: 0 auto;
+				padding: 3em 0 4em;
+			}
+			.hero-image {
+				width: 100%;
+				margin: 0 auto;
+				padding: 0;
+			}
+			.hero-image img {
+				display: block;
+				margin: 0 auto;
+				border-radius: 18px;
+				border: 1px solid rgba(var(--border), 0.9);
+				box-shadow: var(--box-shadow);
+			}
+			.prose {
+				width: 100%;
+				max-width: 100%;
+				margin: 0;
+				padding: 2.2em 0 0;
+				color: rgb(var(--gray-dark));
+			}
+			.title {
+				margin-bottom: 1.5em;
+				padding: 1.2em 0;
+				text-align: left;
+				line-height: 1;
+			}
+			.title h1 {
+				margin: 0 0 0.5em 0;
+			}
+			.date {
+				margin-bottom: 0.5em;
+				color: rgb(var(--gray));
+			}
+			.meta-row {
+				display: flex;
+				align-items: center;
+				gap: 0.65em;
+				flex-wrap: wrap;
+			}
+			.view-count {
+				display: inline-flex;
+				align-items: baseline;
+				gap: 0.35em;
+				font-size: 0.95em;
+				color: rgb(var(--gray));
+			}
+			.view-label {
+				text-transform: uppercase;
+				letter-spacing: 0.04em;
+				font-size: 0.75em;
+			}
+			.view-value {
+				color: rgb(var(--gray-dark));
+				font-weight: 600;
+			}
+		.last-updated-on {
+			font-style: italic;
+		}
+		.author-byline {
+			font-size: 0.9em;
+			color: rgb(var(--gray));
+			margin-top: 0.25em;
+		}
+		.disclaimer {
+			margin-top: 3em;
+			padding: 1em 1.25em;
+			border-left: 3px solid rgba(var(--border), 0.8);
+			background: rgba(var(--gray-light), 0.3);
+			font-size: 0.82em;
+			color: rgb(var(--gray));
+			line-height: 1.6;
+		}
+		.disclaimer strong {
+			color: rgb(var(--gray-dark));
+		}
+	</style>
+	</head>
+
+	<body>
+		<Header />
+		<TableOfContents headings={headings} />
+		<main>
+			<article>
+				<div class="hero-image">
+					{heroImage && (
+						<img src={heroImage.src} alt={heroImage.alt ?? ''} loading="lazy" decoding="async" />
+					)}
+				</div>
+				<div class="prose">
+					<div class="title">
+						<div class="date">
+							<div class="meta-row">
+								<FormattedDate date={pubDate} />
+								{viewSlug && <ViewCounter slug={viewSlug} />}
+							</div>
+							{
+								updatedDate && (
+									<div class="last-updated-on">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
+						</div>
+						<h1>{title}</h1>
+						<p class="author-byline">By {author}</p>
+						<hr />
+					</div>
+				<slot />
+				<div class="disclaimer">
+					<strong>Disclaimer:</strong> This analysis is provided for informational purposes only and does not constitute investment, financial, real estate, or legal advice. The content reflects the views of the Shipwrite editorial team based on publicly available information and is not a recommendation to buy, sell, or hold any security or asset. Past performance is not indicative of future results. Always consult a licensed financial advisor before making investment decisions.
+				</div>
+				<References references={references} />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>

@@ -1,0 +1,28 @@
+---
+import PageLayout from '../../layouts/Page.astro';
+import { getPublishedPosts, getPostsByCategory } from '../../lib/blog';
+
+export async function getStaticPaths() {
+	const posts = await getPublishedPosts();
+	const categories = new Set(posts.flatMap((post) => post.data.category ?? []));
+	return [...categories].map((category) => ({
+		params: { category },
+		props: { category },
+	}));
+}
+
+const posts = await getPublishedPosts();
+const { category } = Astro.props;
+const filtered = getPostsByCategory(posts, category);
+---
+
+<PageLayout title={`${category} archive`} description={`Posts in the ${category} archive`}>
+	<h1>{category} archive</h1>
+	<ul>
+		{filtered.map((post) => (
+			<li>
+				<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+			</li>
+		))}
+	</ul>
+</PageLayout>

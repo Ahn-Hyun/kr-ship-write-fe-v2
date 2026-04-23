@@ -1,0 +1,49 @@
+---
+const { slug, increment } = Astro.props;
+const safeSlug = typeof slug === 'string' ? slug : '';
+const shouldIncrement = increment !== false;
+const endpoint = safeSlug ? `/api/views?slug=${encodeURIComponent(safeSlug)}` : '';
+---
+
+<span
+	class="view-count"
+	data-view-counter
+	data-endpoint={endpoint}
+	data-increment={shouldIncrement ? 'true' : 'false'}
+>
+	<span class="view-label">Views</span>
+	<span class="view-value">-</span>
+</span>
+
+<script is:inline>
+	(() => {
+		const counters = document.querySelectorAll('[data-view-counter]');
+		if (!counters.length) return;
+
+		const format = new Intl.NumberFormat();
+
+		counters.forEach(async (counter) => {
+			const endpoint = counter.getAttribute('data-endpoint');
+			if (!endpoint) return;
+			const shouldIncrement = counter.getAttribute('data-increment') !== 'false';
+			const method = shouldIncrement ? 'POST' : 'GET';
+
+			const valueEl = counter.querySelector('.view-value');
+			if (!valueEl) return;
+
+			try {
+				const response = await fetch(endpoint, { method });
+				if (!response.ok) {
+					throw new Error('Bad response');
+				}
+				const data = await response.json();
+				if (typeof data?.views !== 'number') {
+					throw new Error('Missing views');
+				}
+				valueEl.textContent = format.format(data.views);
+			} catch (error) {
+				valueEl.textContent = '-';
+			}
+		});
+	})();
+</script>

@@ -1,0 +1,91 @@
+---
+import { SITE_TITLE } from '../consts';
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header>
+	<nav class="nav">
+		<h2 class="brand">
+			<a href="/">
+				<span class="brand-mark" aria-hidden="true"></span>
+				<span class="brand-text">{SITE_TITLE}</span>
+			</a>
+		</h2>
+		<div class="internal-links">
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/blog">Blog</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/contact">Contact</HeaderLink>
+		</div>
+	</nav>
+</header>
+<style>
+	header {
+		margin: 0;
+		padding: 1.4em 1.5em 0.8em;
+		background: transparent;
+		border-bottom: none;
+		backdrop-filter: none;
+	}
+	.nav {
+		max-width: 1100px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1em;
+		flex-wrap: wrap;
+	}
+	.brand {
+		margin: 0;
+		font-size: 1.1em;
+		letter-spacing: -0.01em;
+	}
+
+	.brand a,
+	.brand a.active {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5em;
+		text-decoration: none;
+		color: rgb(var(--black));
+	}
+	.brand-mark {
+		width: 12px;
+		height: 12px;
+		border-radius: 999px;
+		background: linear-gradient(145deg, #1d4ed8, #60a5fa);
+		box-shadow: 0 6px 14px rgba(37, 99, 235, 0.22);
+	}
+	.internal-links {
+		display: flex;
+		gap: 0.6em;
+		flex-wrap: wrap;
+	}
+	.internal-links a {
+		color: rgb(var(--gray-dark));
+		padding: 0.5em 0;
+		font-weight: 500;
+	}
+	.internal-links a.active {
+		text-decoration: none;
+		color: rgb(var(--black));
+		font-weight: 700;
+	}
+	.internal-links a:hover {
+		color: var(--accent);
+		text-decoration: none;
+	}
+	@media (max-width: 720px) {
+		header {
+			padding: 1em 1em 0.6em;
+		}
+		.nav {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.internal-links {
+			gap: 0.8em;
+		}
+	}
+</style>

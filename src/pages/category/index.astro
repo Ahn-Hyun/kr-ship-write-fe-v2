@@ -1,0 +1,33 @@
+---
+import PageLayout from '../../layouts/Page.astro';
+import { getPublishedPosts, getAllCategories, getPostsByCategory } from '../../lib/blog';
+
+const posts = await getPublishedPosts();
+const categories = getAllCategories(posts);
+---
+
+<PageLayout title="Market Categories" description="Posts grouped into the site's two US-market categories.">
+	<h1>Market Categories</h1>
+	<ul class="pill-list">
+		{categories.map((category) => (
+			<li>
+				<a class="pill" href={`/category/${category}`}>{category}</a>
+				<span>({getPostsByCategory(posts, category).length})</span>
+			</li>
+		))}
+	</ul>
+	<style>
+		.pill-list {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.6em;
+		}
+		.pill-list li {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.4em;
+		}
+	</style>
+</PageLayout>

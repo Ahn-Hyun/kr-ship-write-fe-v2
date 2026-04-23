@@ -1,0 +1,85 @@
+---
+import { SITE_TITLE } from '../consts';
+
+const today = new Date();
+---
+
+<footer>
+	<div class="footer-brand">
+		<span class="brand-mark" aria-hidden="true"></span>
+		<span class="brand-text">{SITE_TITLE}</span>
+	</div>
+	<p class="footer-meta">&copy; {today.getFullYear()} {SITE_TITLE}. All rights reserved.</p>
+	<nav class="footer-links">
+		<a href="/">Home</a>
+		<a href="/blog">Blog</a>
+		<a href="/about">About</a>
+		<a href="/contact">Contact</a>
+		<a href="/privacy">Privacy Policy</a>
+		<a href="/terms">Terms of Service</a>
+		<a href="/editorial-policy">Editorial Policy</a>
+	</nav>
+	<p class="footer-disclaimer">For informational purposes only. Not investment advice. <a href="/editorial-policy">Editorial Policy</a>.</p>
+</footer>
+<style>
+	footer {
+		padding: 2.5em 1.5em 3em;
+		background: transparent;
+		border-top: none;
+		color: rgb(var(--gray));
+		text-align: center;
+		margin-top: auto;
+	}
+	.footer-brand {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.6em;
+		color: rgb(var(--black));
+		font-weight: 600;
+		letter-spacing: -0.01em;
+	}
+	.footer-meta {
+		margin: 0.4em 0 1.2em;
+		font-size: 0.95em;
+	}
+	.brand-mark {
+		width: 12px;
+		height: 12px;
+		border-radius: 999px;
+		background: linear-gradient(145deg, #1d4ed8, #60a5fa);
+		box-shadow: 0 6px 14px rgba(37, 99, 235, 0.2);
+	}
+	.footer-links {
+		display: flex;
+		justify-content: center;
+		gap: 1.5em;
+		margin-top: 1em;
+		flex-wrap: wrap;
+	}
+	.footer-links a {
+		text-decoration: none;
+		color: rgb(var(--gray-dark));
+		font-weight: 500;
+	}
+	.footer-links a:hover {
+		color: rgb(var(--black));
+		text-decoration: underline;
+		text-underline-offset: 4px;
+	}
+	.footer-disclaimer {
+		margin-top: 1.2em;
+		font-size: 0.78em;
+		color: rgb(var(--gray));
+		opacity: 0.8;
+	}
+	.footer-disclaimer a {
+		color: rgb(var(--gray));
+		text-decoration: underline;
+		text-underline-offset: 3px;
+	}
+	@media (max-width: 720px) {
+		footer {
+			padding: 2em 1em 1.5em;
+		}
+	}
+</style>

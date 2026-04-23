@@ -1,0 +1,37 @@
+---
+interface Props {
+	slotId: string;
+	format?: 'auto' | 'rectangle' | 'horizontal';
+	class?: string;
+}
+
+const { slotId, format = 'auto', class: className } = Astro.props;
+---
+
+<div class={`ad-slot ${className ?? ''}`.trim()}>
+	<div class="ad-label">Sponsored</div>
+	<ins
+		class="adsbygoogle"
+		style="display:block"
+		data-ad-client="ca-pub-3951268297721390"
+		data-ad-slot={slotId}
+		data-ad-format={format}
+		data-full-width-responsive="true"
+	></ins>
+</div>
+
+<style>
+	.ad-slot {
+		margin: 2em 0;
+		padding: 1em;
+		border: 1px dashed rgba(var(--gray), 0.4);
+		text-align: center;
+	}
+	.ad-label {
+		font-size: 0.75em;
+		color: rgb(var(--gray));
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+</style>

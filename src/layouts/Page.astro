@@ -1,0 +1,51 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
+interface Props {
+	title: string;
+	description: string;
+	ogTitle?: string;
+	ogDescription?: string;
+	canonical?: string;
+	mainStyle?: string;
+}
+
+const { title, description, ogTitle, ogDescription, canonical, mainStyle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={ogTitle ?? title}
+			description={ogDescription ?? description}
+			canonical={canonical}
+			ogTitle={ogTitle}
+			ogDescription={ogDescription}
+		/>
+		<style>
+			main {
+				width: 960px;
+				max-width: calc(100% - 2em);
+				margin: 0 auto;
+				padding: 3em 0 4em;
+				color: rgb(var(--gray-dark));
+			}
+			h1 {
+				margin-top: 0;
+			}
+			section + section {
+				margin-top: 2.2em;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main style={mainStyle}>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

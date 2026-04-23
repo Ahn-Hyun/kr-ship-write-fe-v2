@@ -1,0 +1,198 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import ViewCounter from '../../components/ViewCounter.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { getAllCategories, getPublishedPosts } from '../../lib/blog';
+
+const posts = await getPublishedPosts();
+const categories = getAllCategories(posts);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 1080px;
+			}
+			.category-filter {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.75rem;
+				margin: 1rem 0 2rem;
+			}
+			.category-pill {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.4rem;
+				padding: 0.55rem 0.9rem;
+				border-radius: 999px;
+				border: 1px solid rgba(var(--border), 0.9);
+				background: rgba(var(--surface), 1);
+				color: rgb(var(--gray-dark));
+				font-size: inherit;
+				font-family: inherit;
+				font-weight: 600;
+				cursor: pointer;
+			}
+			.category-pill:hover {
+				border-color: rgba(37, 99, 235, 0.3);
+				box-shadow: var(--box-shadow);
+				color: rgb(var(--black));
+			}
+			.category-pill.active {
+				background: rgb(37, 99, 235);
+				border-color: rgb(37, 99, 235);
+				color: #fff;
+			}
+			.category-pill.active:hover {
+				background: rgb(29, 78, 216);
+				border-color: rgb(29, 78, 216);
+				color: #fff;
+			}
+			.post-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+				gap: 1.5rem;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			.post-grid li {
+				width: 100%;
+			}
+			.post-grid li * {
+				text-decoration: none;
+				transition: 0.2s ease;
+			}
+			.post-grid li img {
+				margin-bottom: 0.5rem;
+				border-radius: 14px;
+				border: 1px solid rgba(var(--border), 0.9);
+			}
+			.post-grid li a {
+				display: block;
+				padding: 1rem;
+				border-radius: 16px;
+				border: 1px solid rgba(var(--border), 0.9);
+				background: rgba(var(--surface), 1);
+			}
+			.post-grid li a:hover {
+				border-color: rgba(37, 99, 235, 0.3);
+				box-shadow: var(--box-shadow);
+			}
+			.title {
+				margin: 0;
+				color: rgb(var(--black));
+				line-height: 1.2;
+			}
+			.date,
+			.description,
+			.intro {
+				color: rgb(var(--gray));
+			}
+			.description {
+				margin: 0.5rem 0 0;
+				line-height: 1.55;
+			}
+			.meta {
+				display: flex;
+				gap: 0.5rem;
+				flex-wrap: wrap;
+				margin-top: 0.65rem;
+			}
+			.category-badge {
+				font-size: 0.85rem;
+				font-weight: 700;
+				color: rgb(var(--gray-dark));
+			}
+			.meta .view-count {
+				display: inline-flex;
+				align-items: baseline;
+				gap: 0.3em;
+				font-size: 0.85em;
+				color: rgb(var(--gray));
+			}
+			.meta .view-label {
+				text-transform: uppercase;
+				letter-spacing: 0.04em;
+				font-size: 0.75em;
+			}
+			.meta .view-value {
+				color: rgb(var(--gray-dark));
+				font-weight: 600;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section>
+				<h1>Daily Archive</h1>
+				<p class="intro">
+					Exactly two categories remain in the archive: stocks and real-estate. Each post is intended
+					to trace how the previous day's events may flow into these markets.
+				</p>
+			<div class="category-filter">
+				<button class="category-pill active" data-filter="all">All ({posts.length})</button>
+				{categories.map((category) => (
+					<button class="category-pill" data-filter={category}>{category}</button>
+				))}
+			</div>
+			</section>
+			<section>
+				<ul class="post-grid">
+			{posts.map((post) => (
+					<li data-category={post.data.category[0]}>
+						<a href={`/blog/${post.id}/`}>
+								{post.data.heroImage && (
+									<img
+										src={post.data.heroImage.src}
+										alt={post.data.heroImage.alt ?? ''}
+										loading="lazy"
+										decoding="async"
+									/>
+								)}
+								<h4 class="title">{post.data.title}</h4>
+								<p class="date">
+									<FormattedDate date={post.data.pubDate} />
+								</p>
+								<p class="description">{post.data.description}</p>
+								<div class="meta">
+									<span class="category-badge">{post.data.category[0]}</span>
+									<ViewCounter slug={post.id} increment={false} />
+								</div>
+							</a>
+						</li>
+					))}
+				</ul>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<script is:inline>
+	(function () {
+		var pills = document.querySelectorAll('[data-filter]');
+		var items = document.querySelectorAll('[data-category]');
+
+		pills.forEach(function (pill) {
+			pill.addEventListener('click', function () {
+				var filter = pill.getAttribute('data-filter');
+
+				pills.forEach(function (p) { p.classList.remove('active'); });
+				pill.classList.add('active');
+
+				items.forEach(function (item) {
+					var match = filter === 'all' || item.getAttribute('data-category') === filter;
+					item.style.display = match ? '' : 'none';
+				});
+			});
+		});
+	})();
+</script>

@@ -1,0 +1,165 @@
+---
+import PageLayout from '../../layouts/Page.astro';
+import { getPublishedPosts, getAllTags, getPostsByTag } from '../../lib/blog';
+
+const posts = await getPublishedPosts();
+const tags = getAllTags(posts);
+---
+
+<PageLayout title="Tags" description="Posts grouped by tag.">
+	<h1>Tags</h1>
+	<div class="tag-filter">
+		<ul class="tag-list" id="tag-list" data-tag-list data-tag-max="13" data-collapsed="true">
+			{tags.map((tag) => (
+				<li data-tag-item>
+					<a class="tag-link" href={`/tags/${encodeURIComponent(tag)}`}>#{tag}</a>
+					<span class="tag-count">({getPostsByTag(posts, tag).length})</span>
+				</li>
+			))}
+		</ul>
+		<button
+			class="tag-toggle"
+			type="button"
+			data-tag-toggle
+			aria-controls="tag-list"
+			aria-expanded="false"
+			aria-label="Expand tags"
+		>
+			<span class="tag-toggle-icon" aria-hidden="true">
+				<svg
+					viewBox="0 0 20 20"
+					width="16"
+					height="16"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="1.8"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<polyline points="4,7 10,13 16,7" />
+				</svg>
+			</span>
+		</button>
+	</div>
+	<style>
+		.tag-filter {
+			display: flex;
+			align-items: flex-start;
+			gap: 0.6em;
+		}
+		.tag-list {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.4em 1em;
+			margin: 0.6em 0 1.5em;
+			font-size: 1em;
+			color: rgb(var(--gray));
+			line-height: 1.4;
+			flex: 1;
+			min-width: 0;
+		}
+		.tag-list[data-collapsed='true'] li[data-tag-overflow='true'] {
+			display: none;
+		}
+		.tag-list li {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.4em;
+			margin: 0;
+		}
+		.tag-toggle {
+			margin-top: 0.6em;
+			width: 32px;
+			height: 32px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 999px;
+			border: 1px solid rgba(var(--border), 0.9);
+			background: rgba(var(--surface), 1);
+			color: rgb(var(--gray));
+			cursor: pointer;
+			transition: 0.2s ease;
+		}
+		.tag-toggle:hover {
+			color: rgb(var(--gray-dark));
+			border-color: rgba(37, 99, 235, 0.3);
+			box-shadow: var(--box-shadow);
+		}
+		.tag-toggle-icon {
+			display: inline-flex;
+			transition: transform 0.2s ease;
+		}
+		.tag-toggle[aria-expanded='true'] .tag-toggle-icon {
+			transform: rotate(180deg);
+		}
+		.tag-link {
+			color: rgb(var(--gray));
+			text-decoration: none;
+			transition: 0.2s ease;
+			font-weight: 500;
+		}
+		.tag-link:hover {
+			color: rgb(var(--gray-dark));
+		}
+		.tag-count {
+			font-size: 0.85em;
+			color: rgb(var(--gray));
+		}
+	</style>
+	<script>
+		const tagList = document.querySelector('[data-tag-list]');
+		const tagToggle = document.querySelector('[data-tag-toggle]');
+		if (tagList && tagToggle) {
+			const storageKey = 'tagFilterExpanded';
+			const maxTags = Number(tagList.dataset.tagMax ?? '13');
+			const tagItems = Array.from(tagList.querySelectorAll('[data-tag-item]'));
+
+			tagItems.forEach((item, index) => {
+				if (index >= maxTags) {
+					item.dataset.tagOverflow = 'true';
+				}
+			});
+
+			const readStored = () => {
+				try {
+					return localStorage.getItem(storageKey);
+				} catch {
+					return null;
+				}
+			};
+
+			const writeStored = (expanded) => {
+				try {
+					localStorage.setItem(storageKey, expanded ? 'true' : 'false');
+				} catch {
+					// ignore storage errors
+				}
+			};
+
+			const setExpanded = (expanded, persist = true) => {
+				tagList.dataset.collapsed = expanded ? 'false' : 'true';
+				tagToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+				tagToggle.setAttribute('aria-label', expanded ? 'Collapse tags' : 'Expand tags');
+				if (persist) {
+					writeStored(expanded);
+				}
+			};
+
+			if (tagItems.length <= maxTags) {
+				tagToggle.hidden = true;
+				setExpanded(true, false);
+			} else {
+				const stored = readStored();
+				const initialExpanded = stored === 'true';
+				setExpanded(initialExpanded, false);
+				tagToggle.addEventListener('click', () => {
+					const isExpanded = tagList.dataset.collapsed !== 'true';
+					setExpanded(!isExpanded);
+				});
+			}
+		}
+	</script>
+</PageLayout>
