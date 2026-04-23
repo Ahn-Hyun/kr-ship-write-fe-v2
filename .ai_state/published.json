@@ -1,1 +1,13 @@
-{}
+{
+  "topics": [
+    "2026-04-23:KR:bond yields & pf stress",
+    "2026-04-23:KR:crude oil plunge"
+  ],
+  "slugs": [
+    "2026-04-23-bond-yields-pf-stress-372",
+    "2026-04-23-crude-oil-plunge-1145"
+  ],
+  "daily_impact_runs": [
+    "2026-04-22"
+  ]
+}
