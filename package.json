@@ -1,0 +1,24 @@
+{
+  "name": "ai-blog-v1",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "generate:post": "tsx scripts/generate_post.ts",
+    "generate:image": "tsx scripts/generate_image.ts",
+    "quality:gate": "tsx scripts/quality_gate.ts"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/rss": "^4.0.15",
+    "@astrojs/sitemap": "^3.7.0",
+    "astro": "^5.16.15",
+    "sharp": "^0.34.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}
