@@ -9,7 +9,7 @@ const blog = defineCollection({
 			description: z.string(),
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
-			author: z.string().optional().default('Shipwrite Editorial Team'),
+			author: z.string().optional().default('Shipwrite.kr Editorial Team'),
 			category: z.array(z.enum(['stocks', 'real-estate'])).length(1),
 			tags: z.array(z.string()).default([]),
 			references: z.array(z.string().url()).default([]),
