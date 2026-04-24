@@ -1,13 +1,18 @@
 {
   "topics": [
     "2026-04-23:KR:bond yields & pf stress",
-    "2026-04-23:KR:crude oil plunge"
+    "2026-04-23:KR:crude oil plunge",
+    "2026-04-24:KR:bok policy & seoul housing",
+    "2026-04-24:KR:bok rate hold"
   ],
   "slugs": [
     "2026-04-23-bond-yields-pf-stress-372",
-    "2026-04-23-crude-oil-plunge-1145"
+    "2026-04-23-crude-oil-plunge-1145",
+    "2026-04-24-bok-policy-seoul-housing",
+    "2026-04-24-bok-rate-hold-25"
   ],
   "daily_impact_runs": [
-    "2026-04-22"
+    "2026-04-22",
+    "2026-04-23"
   ]
 }
