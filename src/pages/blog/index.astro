@@ -134,7 +134,7 @@ const categories = getAllCategories(posts);
 			<section>
 				<h1>Daily Archive</h1>
 				<p class="intro">
-					Exactly two categories remain in the archive: stocks and real-estate. Each post is intended
+					Exactly two categories remain in the archive: Korean stocks and Korean real estate. Each post is intended
 					to trace how the previous day's events may flow into these markets.
 				</p>
 			<div class="category-filter">
@@ -145,31 +145,38 @@ const categories = getAllCategories(posts);
 			</div>
 			</section>
 			<section>
-				<ul class="post-grid">
-			{posts.map((post) => (
-					<li data-category={post.data.category[0]}>
-						<a href={`/blog/${post.id}/`}>
-								{post.data.heroImage && (
-									<img
-										src={post.data.heroImage.src}
-										alt={post.data.heroImage.alt ?? ''}
-										loading="lazy"
-										decoding="async"
-									/>
-								)}
-								<h4 class="title">{post.data.title}</h4>
-								<p class="date">
-									<FormattedDate date={post.data.pubDate} />
-								</p>
-								<p class="description">{post.data.description}</p>
-								<div class="meta">
-									<span class="category-badge">{post.data.category[0]}</span>
-									<ViewCounter slug={post.id} increment={false} />
-								</div>
-							</a>
-						</li>
-					))}
-				</ul>
+				{posts.length === 0 ? (
+					<div class="empty-state" style="padding: 3rem 0; text-align: center; color: rgb(var(--gray));">
+						<p>No analyses have been published yet.</p>
+						<p>Check back tomorrow morning for the latest updates on Korean markets.</p>
+					</div>
+				) : (
+					<ul class="post-grid">
+				{posts.map((post) => (
+						<li data-category={post.data.category[0]}>
+							<a href={`/blog/${post.id}/`}>
+									{post.data.heroImage && (
+										<img
+											src={post.data.heroImage.src}
+											alt={post.data.heroImage.alt ?? ''}
+											loading="lazy"
+											decoding="async"
+										/>
+									)}
+									<h4 class="title">{post.data.title}</h4>
+									<p class="date">
+										<FormattedDate date={post.data.pubDate} />
+									</p>
+									<p class="description">{post.data.description}</p>
+									<div class="meta">
+										<span class="category-badge">{post.data.category[0]}</span>
+										<ViewCounter slug={post.id} increment={false} />
+									</div>
+								</a>
+							</li>
+						))}
+					</ul>
+				)}
 			</section>
 		</main>
 		<Footer />
