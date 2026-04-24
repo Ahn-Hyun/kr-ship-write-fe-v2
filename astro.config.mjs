@@ -6,6 +6,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://ship-write.com',
+	site: 'https://kr.ship-write.com',
 	integrations: [mdx(), sitemap()],
 });

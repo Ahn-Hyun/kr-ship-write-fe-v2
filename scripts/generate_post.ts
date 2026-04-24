@@ -32,7 +32,7 @@ heroImage:
   src: "/images/posts/${today}-${slug}/hero.jpg"
   alt: "${title} 대표 이미지"
 seo:
-  canonical: "https://ship-write.com/blog/${today}-${slug}"
+  canonical: "https://kr.ship-write.com/blog/${today}-${slug}"
   ogTitle: "${title}"
   ogDescription: "${description}"
 ---
