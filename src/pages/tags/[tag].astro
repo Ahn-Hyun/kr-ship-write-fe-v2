@@ -65,32 +65,36 @@ const filtered = getPostsByTag(posts, tag);
 			</span>
 		</button>
 	</div>
-	<ul class="post-grid">
-		{filtered.map((post) => (
-			<li>
-				<a href={`/blog/${post.id}/`}>
-					{post.data.heroImage && (
-						<img
-							src={post.data.heroImage.src}
-							alt={post.data.heroImage.alt ?? ''}
-							loading="lazy"
-							decoding="async"
-						/>
-					)}
-					<h4 class="title">{post.data.title}</h4>
-					<p class="date">
-						<FormattedDate date={post.data.pubDate} />
-					</p>
-					<div class="meta">
-						<ViewCounter slug={post.id} increment={false} />
-						{post.data.tags.map((tagItem) => (
-							<span class="tag">#{tagItem}</span>
-						))}
-					</div>
-				</a>
-			</li>
-		))}
-	</ul>
+	{filtered.length === 0 ? (
+		<p style="color: rgb(var(--gray)); padding: 2rem 0;">No posts found with this tag.</p>
+	) : (
+		<ul class="post-grid">
+			{filtered.map((post) => (
+				<li>
+					<a href={`/blog/${post.id}/`}>
+						{post.data.heroImage && (
+							<img
+								src={post.data.heroImage.src}
+								alt={post.data.heroImage.alt ?? ''}
+								loading="lazy"
+								decoding="async"
+							/>
+						)}
+						<h4 class="title">{post.data.title}</h4>
+						<p class="date">
+							<FormattedDate date={post.data.pubDate} />
+						</p>
+						<div class="meta">
+							<ViewCounter slug={post.id} increment={false} />
+							{post.data.tags.map((tagItem) => (
+								<span class="tag">#{tagItem}</span>
+							))}
+						</div>
+					</a>
+				</li>
+			))}
+		</ul>
+	)}
 	<style>
 		.tag-filter {
 			display: flex;

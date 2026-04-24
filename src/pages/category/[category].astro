@@ -18,11 +18,15 @@ const filtered = getPostsByCategory(posts, category);
 
 <PageLayout title={`${category} archive`} description={`Posts in the ${category} archive`}>
 	<h1>{category} archive</h1>
-	<ul>
-		{filtered.map((post) => (
-			<li>
-				<a href={`/blog/${post.id}/`}>{post.data.title}</a>
-			</li>
-		))}
-	</ul>
+	{filtered.length === 0 ? (
+		<p style="color: rgb(var(--gray));">No posts found in this category.</p>
+	) : (
+		<ul>
+			{filtered.map((post) => (
+				<li>
+					<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+				</li>
+			))}
+		</ul>
+	)}
 </PageLayout>
