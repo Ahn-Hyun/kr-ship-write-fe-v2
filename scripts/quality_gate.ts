@@ -21,7 +21,9 @@ const parseFrontmatter = (raw: string) => {
 
 const parseListField = (value: string | undefined) => {
 	if (!value) return [];
-	return [...value.matchAll(/"([^"]+)"/g)].map((match) => match[1]);
+	const trimmed = value.trim();
+	if (!trimmed.startsWith('[') || !trimmed.endsWith(']')) return [];
+	return [...trimmed.matchAll(/"([^"]+)"/g)].map((match) => match[1]);
 };
 
 const files = await fs.readdir(contentDir);
