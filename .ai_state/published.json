@@ -8,8 +8,10 @@
     "2026-04-25:KR:snap elections & property taxes",
     "2026-04-26:KR:ai chip resilience",
     "2026-04-26:KR:bok hawkish tilt & real estate pf",
+    "2026-04-27:KR:bok rate hold & jeonse prices",
     "2026-04-27:KR:bok rate hold pf risk",
-    "2026-04-27:KR:hormuz energy shock"
+    "2026-04-27:KR:hormuz energy shock",
+    "2026-04-27:KR:semiconductor exports"
   ],
   "slugs": [
     "2026-04-23-bond-yields-pf-stress-\uac70\uc2dc\uacbd\uc81c-\ud638\uc870\uc758-\uc5ed\uc124\uacfc-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8",
@@ -20,7 +22,9 @@
     "2026-04-25-\uc870\uae30-\ub300\uc120snap-elections-\ub9ac\uc2a4\ud06c\uc640-\ud55c\uad6d-\uc99d\uc2dc-\ubc38\ub958\uc5c5-\uc815\ucc45-\ubcc0\ud654-\ubc0f-\ud22c\uc790-\uc804\ub7b5-\uc810\uac80",
     "2026-04-26-bok-hawkish-tilt-real-estate-pf-\uae08\ub9ac-\uc778\ud558-\uae30\ub300-\ucd95\uc18c\uc640-\ubd80\ub3d9\uc0b0-\uad6c\uc870\uc870\uc815",
     "2026-04-26-\uace0\uae08\ub9ac\uc640-\uac70\uc2dc\uacbd\uc81c-\uc5ed\ud48d\uc744-\uadf9\ubcf5\ud558\ub294-ai-chip-resilience-k\uc790\ud615-\uc99d\uc2dc-\uc591\uadf9\ud654-\ubd84\uc11d",
+    "2026-04-27-bok-rate-hold-jeonse-prices-\uc778\ud50c\ub808\uc774\uc158\uacfc-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5\uc758-\uac70\uc2dc\uacbd\uc81c-\ub51c\ub808\ub9c8-\ubd84\uc11d",
     "2026-04-27-bok-rate-hold-pf-risk-\ud55c\uad6d\uc740\ud589-\uae30\uc900\uae08\ub9ac-\ub3d9\uacb0\uc774-\ubd80\ub3d9\uc0b0-\uc790\ubcf8\uc2dc\uc7a5\uc5d0-\ubbf8\uce58\ub294-\uc601\ud5a5",
+    "2026-04-27-\uc6d0\ub2ec\ub7ec-\ud658\uc728-1500\uc6d0-\uc2dc\ub300-\ud55c\uad6d-\uc99d\uc2dc-\uc0dd\uc874-\uacf5\uc2dd-\uc704\uae30\ub97c-\uc0c1\uc1c4\ud558\ub294-\ubc18\ub3c4\uccb4-\uc218\ucd9c-\ub3d9\ud5a5-\ubd84\uc11d",
     "2026-04-27-\ud638\ub974\ubb34\uc988-\uc5d0\ub108\uc9c0-\uc1fc\ud06c\uc640-\uc720\uac00-\uae09\ub4f1-\ub9ac\uc2a4\ud06c-\ud55c\uad6d-\uc99d\uc2dc\uc758-\uad6c\uc870\uc801-\ucde8\uc57d\uc131-\ubc0f-\uac70\uc2dc\uacbd\uc81c-\ud30c\uae09-\ud6a8\uacfc-\ubd84\uc11d"
   ],
   "daily_impact_runs": [
@@ -29,5 +33,8 @@
     "2026-04-24",
     "2026-04-25",
     "2026-04-26"
+  ],
+  "weekly_major_runs": [
+    "2026-04-20_2026-04-26"
   ]
 }
