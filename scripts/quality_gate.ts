@@ -8,7 +8,7 @@ const contentDir = path.join(process.cwd(), 'src', 'content', 'blog');
 
 const parseFrontmatter = (raw: string) => {
 	const match = raw.match(/^---\n([\s\S]*?)\n---/);
-	if (!match) return { data: {}, body: raw };
+	if (!match) return { data: {}, body: raw, frontmatter: '' };
 	const lines = match[1].split('\n');
 	const data: Record<string, string> = {};
 	for (const line of lines) {
@@ -16,7 +16,68 @@ const parseFrontmatter = (raw: string) => {
 		if (!key || rest.length === 0) continue;
 		data[key.trim()] = rest.join(':').trim();
 	}
-	return { data, body: raw.slice(match[0].length).trim() };
+	return { data, body: raw.slice(match[0].length).trim(), frontmatter: match[1] };
+};
+
+const validateHeroImageFrontmatter = (file: string, frontmatter: string) => {
+	if (!frontmatter) return;
+
+	const lines = frontmatter.split('\n');
+	const heroIndex = lines.findIndex((line) => {
+		if (line !== line.trimStart()) return false;
+		const separatorIndex = line.indexOf(':');
+		return separatorIndex > 0 && line.slice(0, separatorIndex).trim() === 'heroImage';
+	});
+	if (heroIndex === -1) return;
+
+	const heroLine = lines[heroIndex];
+	const heroSeparatorIndex = heroLine.indexOf(':');
+	const inlineValue = heroLine.slice(heroSeparatorIndex + 1).trim();
+	if (inlineValue) {
+		console.error(`[FAIL] ${file} - heroImage must use nested src/alt frontmatter, not a scalar string`);
+		return true;
+	}
+
+	let sawSrc = false;
+	for (let i = heroIndex + 1; i < lines.length; i += 1) {
+		const line = lines[i];
+		if (!line.trim()) continue;
+		if (!line.startsWith(' ')) {
+			if (line.startsWith('\t')) {
+				console.error(`[FAIL] ${file} - heroImage nested fields must be indented with two spaces`);
+				return true;
+			}
+			break;
+		}
+		if (!line.startsWith('  ') || line.startsWith('   ') || line[2] === '\t') {
+			console.error(`[FAIL] ${file} - heroImage nested fields must be indented with two spaces`);
+			return true;
+		}
+
+		const nestedLine = line.slice(2);
+		const separatorIndex = nestedLine.indexOf(':');
+		if (separatorIndex <= 0) {
+			console.error(`[FAIL] ${file} - heroImage nested fields are malformed`);
+			return true;
+		}
+
+		const nestedKey = nestedLine.slice(0, separatorIndex).trim();
+		const nestedValue = nestedLine.slice(separatorIndex + 1).trim();
+		if (nestedKey === 'src') {
+			if (!nestedValue || nestedValue === '""' || nestedValue === "''") {
+				console.error(`[FAIL] ${file} - heroImage.src must not be empty`);
+				return true;
+			}
+			sawSrc = true;
+		}
+	}
+
+	if (!sawSrc) {
+		console.error(`[FAIL] ${file} - heroImage must include a nested src field`);
+		return true;
+	}
+
+	return false;
 };
 
 const parseListField = (value: string | undefined) => {
@@ -34,7 +95,7 @@ let hasError = false;
 for (const file of posts) {
 	const fullPath = path.join(contentDir, file);
 	const raw = await fs.readFile(fullPath, 'utf-8');
-	const { data, body } = parseFrontmatter(raw);
+	const { data, body, frontmatter } = parseFrontmatter(raw);
 
 	if (data.draft === 'true') {
 		continue;
@@ -61,8 +122,12 @@ for (const file of posts) {
 		hasError = true;
 	}
 
-	if (!Object.prototype.hasOwnProperty.call(data, 'references')) {
+	if (!Object.hasOwn(data, 'references')) {
 		console.error(`[FAIL] ${file} - missing frontmatter references field`);
+		hasError = true;
+	}
+
+	if (validateHeroImageFrontmatter(file, frontmatter)) {
 		hasError = true;
 	}
 }
