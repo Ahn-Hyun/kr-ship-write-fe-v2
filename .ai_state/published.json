@@ -20,7 +20,9 @@
     "2026-04-30:KR:fed rate freeze pf risk",
     "2026-05-01:KR:bok rate hold",
     "2026-05-02:KR:jisan commercial real estate",
-    "2026-05-02:KR:jisan cre crisis"
+    "2026-05-02:KR:jisan cre crisis",
+    "2026-05-03:KR:bok rate hikes & real estate pf",
+    "2026-05-03:KR:kospi semiconductor bifurcation"
   ],
   "slugs": [
     "2026-04-23-bond-yields-pf-stress-\uac70\uc2dc\uacbd\uc81c-\ud638\uc870\uc758-\uc5ed\uc124\uacfc-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8",
@@ -43,7 +45,9 @@
     "2026-04-30-\ubbf8\uad6d-\uc5f0\uc900\uc758-\uae08\ub9ac-\ub3d9\uacb0\uacfc-fed-rate-freeze-pf-risk-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5-\ud30c\uae09-\uacbd\ub85c",
     "2026-05-01-bok-rate-hold-\uacb0\uc815\uacfc-\ucf54\uc2a4\ud53c-\uc2dc\uc7a5-\ud328\ub7ec\ub2e4\uc784-\uc804\ud658-\uc720\ub3d9\uc131-\uc7a5\uc138\uc758-\uc885\ub8cc\uc640-\ud380\ub354\uba58\ud138\uc758-\uadc0\ud658",
     "2026-05-02-jisan-commercial-real-estate-\ubd80\uc2e4\ub960-1-\ub3cc\ud30c-\uc0c1\uc5c5\uc6a9-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5-\uad6c\uc870\uc801-\uc7ac\ud3b8",
-    "2026-05-02-jisan-cre-crisis-\uc9c0\uc2dd\uc0b0\uc5c5\uc13c\ud130-\uacf5\uc2e4-\uc0ac\ud0dc\uac00-\ucd09\ubc1c\ud55c-\uae08\uc735-\ubc0f-\uac74\uc124-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\ub9ac\uc2a4\ud06c"
+    "2026-05-02-jisan-cre-crisis-\uc9c0\uc2dd\uc0b0\uc5c5\uc13c\ud130-\uacf5\uc2e4-\uc0ac\ud0dc\uac00-\ucd09\ubc1c\ud55c-\uae08\uc735-\ubc0f-\uac74\uc124-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\ub9ac\uc2a4\ud06c",
+    "2026-05-03-2026\ub144-1\ubd84\uae30-gdp-\uc11c\ud504\ub77c\uc774\uc988\uc640-\ucf54\uc2a4\ud53c-\ubc18\ub3c4\uccb4-\uc591\uadf9\ud654-\uac70\uc2dc\uacbd\uc81c-\ud30c\uae09-\uacbd\ub85c\uc640-\ud22c\uc790-\uc804\ub7b5",
+    "2026-05-03-\ud558\ubc18\uae30-\uae08\ub9ac-\uc778\uc0c1-\uc0ac\uc774\ud074\uacfc-bok-rate-hikes-real-estate-pf-\ub9ac\uc2a4\ud06c-\ubd84\uc11d"
   ],
   "daily_impact_runs": [
     "2026-04-22",
@@ -55,7 +59,8 @@
     "2026-04-28",
     "2026-04-29",
     "2026-04-30",
-    "2026-05-01"
+    "2026-05-01",
+    "2026-05-02"
   ],
   "weekly_major_runs": [
     "2026-04-20_2026-04-26"
