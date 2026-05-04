@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="580" viewBox="0 0 1000 580" role="img" aria-label="Bar chart showing foreign net selling of Korean equities increasing from 98 billion won in January to 4.35 trillion won in March 2026.">
+<rect width="100%" height="100%" fill="#f8fafc" rx="10"/>
+<text x="110" y="44" font-size="20" font-weight="700" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#0f172a">2026년 1분기 외국인 주식 순매도 추이</text>
+<text x="110" y="68" font-size="13" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#64748b">억 원</text>
+<line x1="110" y1="100" x2="110" y2="480" stroke="#cbd5e1" stroke-width="1.5"/>
+<line x1="110" y1="480" x2="960" y2="480" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="102" y="484.00" text-anchor="end" font-size="12" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#94a3b8">0</text>
+<line x1="110" y1="396.67" x2="960" y2="396.67" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="102" y="400.67" text-anchor="end" font-size="12" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#94a3b8">10,876</text>
+<line x1="110" y1="313.33" x2="960" y2="313.33" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="102" y="317.33" text-anchor="end" font-size="12" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#94a3b8">21,752</text>
+<line x1="110" y1="230.00" x2="960" y2="230.00" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="102" y="234.00" text-anchor="end" font-size="12" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#94a3b8">32,629</text>
+<line x1="110" y1="146.67" x2="960" y2="146.67" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="102" y="150.67" text-anchor="end" font-size="12" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#94a3b8">43,505</text>
+<rect x="173.75" y="472.49" width="155.83" height="7.51" fill="#1d4ed8" rx="5" opacity="0.88"/>
+<text x="251.67" y="463.49" text-anchor="middle" font-size="13" font-weight="700" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#1d4ed8">980</text>
+<text x="251.67" y="506" text-anchor="middle" font-size="13" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#475569">1월</text>
+<rect x="457.08" y="330.15" width="155.83" height="149.85" fill="#0891b2" rx="5" opacity="0.88"/>
+<text x="535.00" y="321.15" text-anchor="middle" font-size="13" font-weight="700" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#0891b2">19,558</text>
+<text x="535.00" y="506" text-anchor="middle" font-size="13" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#475569">2월</text>
+<rect x="740.42" y="146.67" width="155.83" height="333.33" fill="#059669" rx="5" opacity="0.88"/>
+<text x="818.33" y="137.67" text-anchor="middle" font-size="13" font-weight="700" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#059669">43,505</text>
+<text x="818.33" y="506" text-anchor="middle" font-size="13" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#475569">3월</text>
+</svg>

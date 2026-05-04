@@ -24,6 +24,8 @@
     "2026-05-03:KR:bok rate hikes & real estate pf",
     "2026-05-03:KR:kospi semiconductor bifurcation",
     "2026-05-04:KR:bok prolonged rate pause",
+    "2026-05-04:KR:bok rate hike risk & bond yields",
+    "2026-05-04:KR:kospi foreign selling & ai chip exports",
     "2026-05-04:KR:usd/krw 1470"
   ],
   "slugs": [
@@ -51,6 +53,8 @@
     "2026-05-03-2026\ub144-1\ubd84\uae30-gdp-\uc11c\ud504\ub77c\uc774\uc988\uc640-\ucf54\uc2a4\ud53c-\ubc18\ub3c4\uccb4-\uc591\uadf9\ud654-\uac70\uc2dc\uacbd\uc81c-\ud30c\uae09-\uacbd\ub85c\uc640-\ud22c\uc790-\uc804\ub7b5",
     "2026-05-03-\ud558\ubc18\uae30-\uae08\ub9ac-\uc778\uc0c1-\uc0ac\uc774\ud074\uacfc-bok-rate-hikes-real-estate-pf-\ub9ac\uc2a4\ud06c-\ubd84\uc11d",
     "2026-05-04-bok-prolonged-rate-pause-\uae30\uc900\uae08\ub9ac-\ub3d9\uacb0-\uc7a5\uae30\ud654\uc640-\uc8fc\ud0dd\ub2f4\ubcf4\ub300\ucd9c-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uacbd\uc0c9",
+    "2026-05-04-bok-rate-hike-risk-bond-yields-\ud55c\uad6d\uc740\ud589-\ub9e4\ud30c\uc801-\ud734\uc9c0\uae30\uc640-\ub300\ucd9c-\uae08\ub9ac-\ud30c\uae09",
+    "2026-05-04-kospi-foreign-selling-ai-chip-exports-2026\ub144-1\ubd84\uae30-\uc99d\uc2dc-\ubd84\uc11d",
     "2026-05-04-usdkrw-1470-\ub3cc\ud30c\uc640-\uace0\ud658\uc728-\ub274\ub178\uba40-\uc2dc\ub300-\ud55c\uad6d-\ucf54\uc2a4\ud53c-\uc99d\uc2dc\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8\uacfc-\ud22c\uc790-\uc804\ub7b5"
   ],
   "daily_impact_runs": [
@@ -68,6 +72,7 @@
     "2026-05-03"
   ],
   "weekly_major_runs": [
-    "2026-04-20_2026-04-26"
+    "2026-04-20_2026-04-26",
+    "2026-04-27_2026-05-03"
   ]
 }
