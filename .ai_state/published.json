@@ -28,7 +28,9 @@
     "2026-05-04:KR:kospi foreign selling & ai chip exports",
     "2026-05-04:KR:usd/krw 1470",
     "2026-05-05:KR:bok rate hold",
-    "2026-05-05:KR:hormuz oil shock"
+    "2026-05-05:KR:hormuz oil shock",
+    "2026-05-06:KR:ktb yield spike",
+    "2026-05-06:KR:us treasury 5% yield"
   ],
   "slugs": [
     "2026-04-23-bond-yields-pf-stress-\uac70\uc2dc\uacbd\uc81c-\ud638\uc870\uc758-\uc5ed\uc124\uacfc-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8",
@@ -59,7 +61,9 @@
     "2026-05-04-kospi-foreign-selling-ai-chip-exports-2026\ub144-1\ubd84\uae30-\uc99d\uc2dc-\ubd84\uc11d",
     "2026-05-04-usdkrw-1470-\ub3cc\ud30c\uc640-\uace0\ud658\uc728-\ub274\ub178\uba40-\uc2dc\ub300-\ud55c\uad6d-\ucf54\uc2a4\ud53c-\uc99d\uc2dc\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8\uacfc-\ud22c\uc790-\uc804\ub7b5",
     "2026-05-05-hormuz-oil-shock-\ud638\ub974\ubb34\uc988-\ud574\ud611-\ubd09\uc1c4\uc5d0-\ub530\ub978-\uc6d0\uc720-\uacf5\uae09\ub9dd-\uad50\ub780\uacfc-\ud55c\uad6d-\uc99d\uc2dc-\ud30c\uae09\ub825",
-    "2026-05-05-\ud55c\uad6d\uc740\ud589\uc758-7\uc5f0\uc18d-bok-rate-hold-\uacb0\uc815-\ubd80\ub3d9\uc0b0-pf\uc640-\uc2e4\ubb3c-\uacbd\uc81c\uc5d0-\ubbf8\uce58\ub294-\ud30c\uae09-\ud6a8\uacfc"
+    "2026-05-05-\ud55c\uad6d\uc740\ud589\uc758-7\uc5f0\uc18d-bok-rate-hold-\uacb0\uc815-\ubd80\ub3d9\uc0b0-pf\uc640-\uc2e4\ubb3c-\uacbd\uc81c\uc5d0-\ubbf8\uce58\ub294-\ud30c\uae09-\ud6a8\uacfc",
+    "2026-05-06-us-treasury-5-yield-\ub3cc\ud30c-\uac00\uc0c1-\uc2dc\ub098\ub9ac\uc624-\uae00\ub85c\ubc8c-\uc790\ubcf8-\uc774\ub3d9\uacfc-\ud55c\uad6d-\uc99d\uc2dc-\uc601\ud5a5-\ubd84\uc11d",
+    "2026-05-06-\ubbf8\uad6d-\uc7a5\uae30\ucc44-\uae08\ub9ac-5-\ub3cc\ud30c\uc640-ktb-yield-spike-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-\ubc0f-\uc2e4\ubb3c-\uacbd\uc81c-\ud30c\uae09-\ud6a8\uacfc"
   ],
   "daily_impact_runs": [
     "2026-04-22",
@@ -74,7 +78,8 @@
     "2026-05-01",
     "2026-05-02",
     "2026-05-03",
-    "2026-05-04"
+    "2026-05-04",
+    "2026-05-05"
   ],
   "weekly_major_runs": [
     "2026-04-20_2026-04-26",
