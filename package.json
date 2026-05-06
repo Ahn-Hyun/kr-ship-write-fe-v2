@@ -5,13 +5,16 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "npm run build && wrangler dev",
     "astro": "astro",
     "generate:post": "tsx scripts/generate_post.ts",
     "generate:image": "tsx scripts/generate_image.ts",
-    "quality:gate": "tsx scripts/quality_gate.ts"
+    "quality:gate": "tsx scripts/quality_gate.ts",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "12",
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
@@ -19,6 +22,7 @@
     "sharp": "^0.34.3"
   },
   "devDependencies": {
-    "tsx": "^4.19.2"
+    "tsx": "^4.19.2",
+    "wrangler": "^4.88.0"
   }
 }
