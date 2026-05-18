@@ -53,7 +53,8 @@
     "2026-05-15:KR:kospi valuation risk",
     "2026-05-16:KR:ktb yield surge",
     "2026-05-17:KR:bok hawkish shift",
-    "2026-05-17:KR:krw 1500 / kospi outflows"
+    "2026-05-17:KR:krw 1500 / kospi outflows",
+    "2026-05-18:KR:bok hawkish pivot"
   ],
   "slugs": [
     "2026-04-23-bond-yields-pf-stress-\uac70\uc2dc\uacbd\uc81c-\ud638\uc870\uc758-\uc5ed\uc124\uacfc-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8",
@@ -109,7 +110,8 @@
     "2026-05-15-\ubc18\ub3c4\uccb4-\ud638\uc870-\uc774\uba74\uc758-\uae08\ub9ac-\uae09\ub4f1-kospi-valuation-risk\uc758-\uad6c\uc870\uc801-\uc6d0\uc778\uacfc-\ud30c\uae09-\ud6a8\uacfc",
     "2026-05-16-ktb-yield-surge\uc5d0-\ub530\ub978-\uc790\ubcf8-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc804\ud658-\uc720\ub3d9\uc131-\uc7a5\uc138-\uc885\ub8cc\uc640-\uc8fc\uc2dd-\ud22c\uc790-\uc804\ub7b5",
     "2026-05-17-krw-1500-kospi-outflows-\uae00\ub85c\ubc8c-\uae08\ub9ac-\uc7ac\uc0b0\uc815\uacfc-\ud55c\uad6d-\uc99d\uc2dc\uc758-\uad6c\uc870\uc801-\ubcc0\uace1\uc810",
-    "2026-05-17-\ud55c\uad6d\uc740\ud589\uc758-bok-hawkish-shift-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\ub514\ub808\ubc84\ub9ac\uc9d5\uacfc-\uac70\uc2dc\uacbd\uc81c-\uc804\ub9dd"
+    "2026-05-17-\ud55c\uad6d\uc740\ud589\uc758-bok-hawkish-shift-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\ub514\ub808\ubc84\ub9ac\uc9d5\uacfc-\uac70\uc2dc\uacbd\uc81c-\uc804\ub9dd",
+    "2026-05-18-\ubc18\ub3c4\uccb4-\ud638\ud669-\ucc29\uc2dc\uac00-\uc720\ubc1c\ud55c-bok-hawkish-pivot-\uac00\ub2a5\uc131\uacfc-\ud55c\uad6d-\uc790\ubcf8\uc2dc\uc7a5-\uc591\uadf9\ud654-\ubd84\uc11d"
   ],
   "daily_impact_runs": [
     "2026-04-22",
@@ -136,7 +138,8 @@
     "2026-05-13",
     "2026-05-14",
     "2026-05-15",
-    "2026-05-16"
+    "2026-05-16",
+    "2026-05-17"
   ],
   "weekly_major_runs": [
     "2026-04-20_2026-04-26",
