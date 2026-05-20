@@ -58,7 +58,9 @@
     "2026-05-18:KR:bok rate hikes & rising yields",
     "2026-05-18:KR:kospi correction & samsung strike",
     "2026-05-19:KR:bok hawkish shift",
-    "2026-05-19:KR:real estate pf maturity wall"
+    "2026-05-19:KR:real estate pf maturity wall",
+    "2026-05-20:KR:ktb yield spike",
+    "2026-05-20:KR:usd/krw 1500 & oil shock"
   ],
   "slugs": [
     "2026-04-23-bond-yields-pf-stress-\uac70\uc2dc\uacbd\uc81c-\ud638\uc870\uc758-\uc5ed\uc124\uacfc-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8",
@@ -119,7 +121,9 @@
     "2026-05-18-\ubc18\ub3c4\uccb4-\ud638\ud669-\ucc29\uc2dc\uac00-\uc720\ubc1c\ud55c-bok-hawkish-pivot-\uac00\ub2a5\uc131\uacfc-\ud55c\uad6d-\uc790\ubcf8\uc2dc\uc7a5-\uc591\uadf9\ud654-\ubd84\uc11d",
     "2026-05-18-\ud638\ub974\ubb34\uc988-\ud53c\uaca9-\uc0ac\ud0dc\uc640-bok-rate-hikes-rising-yields-\ud558\ubc18\uae30-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5-\uc804\ub9dd",
     "2026-05-19-\uad6c\uc870\uc801-\ubcc0\uace1\uc810-\ub9de\uc740-\ud55c\uad6d-real-estate-pf-maturity-wall-\ub3c4\ub798\uc640-\uae08\uc735-\ud30c\uae09-\ud6a8\uacfc",
-    "2026-05-19-\uc9c0\uc815\ud559\uc801-\uc704\uae30\uc640-bok-hawkish-shift-\ud560\uc778\uc728-\uc0c1\uc2b9-\ubcc0\uc218\uac00-\ud55c\uad6d-\uc99d\uc2dc-\ubc38\ub958\uc5d0\uc774\uc158\uc5d0-\ubbf8\uce58\ub294-\uc601\ud5a5"
+    "2026-05-19-\uc9c0\uc815\ud559\uc801-\uc704\uae30\uc640-bok-hawkish-shift-\ud560\uc778\uc728-\uc0c1\uc2b9-\ubcc0\uc218\uac00-\ud55c\uad6d-\uc99d\uc2dc-\ubc38\ub958\uc5d0\uc774\uc158\uc5d0-\ubbf8\uce58\ub294-\uc601\ud5a5",
+    "2026-05-20-ktb-yield-spike-\ud604\uc0c1\uacfc-230\uc870-\uc6d0-\uaddc\ubaa8-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc720\ub3d9\uc131-\uc704\ud5d8-\ubd84\uc11d",
+    "2026-05-20-\uc9c0\uc815\ud559\uc801-\uc704\uae30\uc640-usdkrw-1500-oil-shock-\ud55c\uad6d-\ucf54\uc2a4\ud53c-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8-\ubd84\uc11d"
   ],
   "daily_impact_runs": [
     "2026-04-22",
@@ -148,7 +152,8 @@
     "2026-05-15",
     "2026-05-16",
     "2026-05-17",
-    "2026-05-18"
+    "2026-05-18",
+    "2026-05-19"
   ],
   "weekly_major_runs": [
     "2026-04-20_2026-04-26",
