@@ -74,7 +74,9 @@
     "2026-05-25:KR:ktb 10-year yield",
     "2026-05-25:KR:seoul logistics vulnerability",
     "2026-06-02:KR:bok rate hold",
-    "2026-06-02:KR:bok stagflation"
+    "2026-06-02:KR:bok stagflation",
+    "2026-06-03:KR:bok rate hold",
+    "2026-06-03:KR:kospi sector divergence"
   ],
   "slugs": [
     "2026-04-23-bond-yields-pf-stress-\uac70\uc2dc\uacbd\uc81c-\ud638\uc870\uc758-\uc5ed\uc124\uacfc-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8",
@@ -151,7 +153,9 @@
     "2026-05-25-\uac00\uc0c1\uc758-\ud638\ub974\ubb34\uc988-\uc5d0\ub108\uc9c0-\uc1fc\ud06c-\uc2dc\ub098\ub9ac\uc624\uac00-\ud55c\uad6d-\uc99d\uc2dc-\ud380\ub354\uba58\ud138\uacfc-\uc11d\uc720\ud654\ud559-\uc0b0\uc5c5\uc5d0-\ubbf8\uce58\ub294-\uc601\ud5a5-\ubd84\uc11d",
     "2026-05-25-\ud55c\uad6d-\uc0c1\uc5c5\uc6a9-\ubd80\ub3d9\uc0b0\uc758-\uc5ed\uc124-seoul-logistics-vulnerability\uc640-\uac70\uc2dc\uacbd\uc81c-\ub9ac\uc2a4\ud06c",
     "2026-06-02-2026\ub144-4\uc6d4-\ud55c\uad6d\uc740\ud589-bok-rate-hold-\uacb0\uc815-\uc2a4\ud0dc\uadf8\ud50c\ub808\uc774\uc158-\uc9c4\uc785-\uc6b0\ub824\uc640-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5-\uad6c\uc870\uc870\uc815-\uc804\ub9dd",
-    "2026-06-02-bok-stagflation-\uc6b0\ub824-\ud55c\uad6d\uc740\ud589\uc758-\uae30\uc900\uae08\ub9ac-\ub3d9\uacb0\uacfc-\uace0\uc720\uac00\uac00-\uad6d\ub0b4-\uc99d\uc2dc\uc5d0-\ubbf8\uce58\ub294-\ud30c\uae09-\ud6a8\uacfc"
+    "2026-06-02-bok-stagflation-\uc6b0\ub824-\ud55c\uad6d\uc740\ud589\uc758-\uae30\uc900\uae08\ub9ac-\ub3d9\uacb0\uacfc-\uace0\uc720\uac00\uac00-\uad6d\ub0b4-\uc99d\uc2dc\uc5d0-\ubbf8\uce58\ub294-\ud30c\uae09-\ud6a8\uacfc",
+    "2026-06-03-kospi-sector-divergence-2026\ub144-\ud55c\uad6d-\uc99d\uc2dc-\uc591\uadf9\ud654\uc640-\ubc18\ub3c4\uccb4-\uc9d1\uc911-\ud604\uc0c1-\ubd84\uc11d",
+    "2026-06-03-\ud55c\uad6d\uc740\ud589-bok-rate-hold-\uacb0\uc815-\uace0\uae08\ub9ac-\uc7a5\uae30\ud654\uac00-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8\uc5d0-\ubbf8\uce58\ub294-\uc601\ud5a5"
   ],
   "daily_impact_runs": [
     "2026-04-22",
@@ -187,7 +191,8 @@
     "2026-05-22",
     "2026-05-23",
     "2026-05-24",
-    "2026-06-01"
+    "2026-06-01",
+    "2026-06-02"
   ],
   "weekly_major_runs": [
     "2026-04-20_2026-04-26",
