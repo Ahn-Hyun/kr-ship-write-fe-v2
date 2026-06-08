@@ -84,7 +84,9 @@
     "2026-06-06:KR:hormuz energy shock",
     "2026-06-06:KR:seoul-provincial polarization & dsr tightening",
     "2026-06-07:KR:ktb yield surge & pf risk",
-    "2026-06-07:KR:us tech selloff spillover"
+    "2026-06-07:KR:us tech selloff spillover",
+    "2026-06-08:KR:bok gdp upgrade",
+    "2026-06-08:KR:bok rate hold & pf stress"
   ],
   "slugs": [
     "2026-04-23-bond-yields-pf-stress-\uac70\uc2dc\uacbd\uc81c-\ud638\uc870\uc758-\uc5ed\uc124\uacfc-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8",
@@ -171,7 +173,9 @@
     "2026-06-06-seoul-provincial-polarization-dsr-tightening-\ub300\ucd9c-\uaddc\uc81c\uc758-\uc5ed\uc124",
     "2026-06-06-\ud638\ub974\ubb34\uc988-\uc5d0\ub108\uc9c0-\uc1fc\ud06c\uac00-\ubd80\ub978-\uac70\uc2dc\uacbd\uc81c-\ubcc0\ub3d9\uc131-2026\ub144-\ud55c\uad6d-\uc99d\uc2dc\uc758-\uc720\ub3d9\uc131-\uc5ed\uc124\uacfc-\uc2dc\uc7a5-\uc804\ub9dd",
     "2026-06-07-ktb-yield-surge-pf-risk-\uad6d\uace0\ucc44-\uae08\ub9ac-\uc0c1\uc2b9\uacfc-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc704\ud5d8",
-    "2026-06-07-us-tech-selloff-spillover-\ubbf8\uad6d-\uae30\uc220\uc8fc-\ud558\ub77d\uc774-\ud55c\uad6d-\ucf54\uc2a4\ud53c-\uc99d\uc2dc\uc5d0-\ubbf8\uce58\ub294-\ud30c\uae09-\ud6a8\uacfc"
+    "2026-06-07-us-tech-selloff-spillover-\ubbf8\uad6d-\uae30\uc220\uc8fc-\ud558\ub77d\uc774-\ud55c\uad6d-\ucf54\uc2a4\ud53c-\uc99d\uc2dc\uc5d0-\ubbf8\uce58\ub294-\ud30c\uae09-\ud6a8\uacfc",
+    "2026-06-08-bok-rate-hold-pf-stress-\uae08\ub9ac-\ub3d9\uacb0\uacfc-\ubc18\ub3c4\uccb4-\ud638\uc870\uac00-\ube5a\uc5b4\ub0b8-\ubd80\ub3d9\uc0b0-pf\uc758-\ub51c\ub808\ub9c8",
+    "2026-06-08-\ud55c\uad6d\uc740\ud589-bok-gdp-upgrade-\ubc1c\ud45c\uc640-\uc8fc\uc2dd-\uc2dc\uc7a5-\ubc18\ub3c4\uccb4-\uc218\ucd9c-\ud638\uc870\uc640-\ub0b4\uc218-\uc591\uadf9\ud654-\ubd84\uc11d"
   ],
   "daily_impact_runs": [
     "2026-04-22",
@@ -212,7 +216,8 @@
     "2026-06-03",
     "2026-06-04",
     "2026-06-05",
-    "2026-06-06"
+    "2026-06-06",
+    "2026-06-07"
   ],
   "weekly_major_runs": [
     "2026-04-20_2026-04-26",
