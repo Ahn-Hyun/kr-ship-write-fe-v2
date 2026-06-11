@@ -92,7 +92,9 @@
     "2026-06-09:KR:kospi margin contagion",
     "2026-06-09:KR:project financing (pf) crisis",
     "2026-06-10:KR:us treasury yield surge",
-    "2026-06-10:KR:us-korea yield gap"
+    "2026-06-10:KR:us-korea yield gap",
+    "2026-06-11:KR:kospi tech sell-off",
+    "2026-06-11:KR:yield spike & pf risk"
   ],
   "slugs": [
     "2026-04-23-bond-yields-pf-stress-\uac70\uc2dc\uacbd\uc81c-\ud638\uc870\uc758-\uc5ed\uc124\uacfc-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8",
@@ -187,7 +189,9 @@
     "2026-06-09-\uace0\uae08\ub9ac-\ucda9\uaca9\uacfc-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5\uc758-project-financing-pf-crisis-\uad6c\uc870\uc801-\uc6d0\uc778",
     "2026-06-09-\uacfc\ub3c4\ud55c-\uc2e0\uc6a9\uc735\uc790\uc640-\ubc18\ub300\ub9e4\ub9e4\uac00-\ucd09\ubc1c\ud55c-\ud55c\uad6d-\uc99d\uc2dc-\uc704\uae30-kospi-margin-contagion-\ud574\ubd80",
     "2026-06-10-us-treasury-yield-surge\uac00-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-pf\uc640-\uae08\uc735\uc2dc\uc7a5\uc5d0-\ubbf8\uce58\ub294-\uc5f0\uc1c4-\ud30c\uae09-\ud6a8\uacfc",
-    "2026-06-10-\uac70\ub300\ud55c-us-korea-yield-gap-\ud655\ub300\uac00-\ucd09\ubc1c\ud55c-\uae00\ub85c\ubc8c-\uc790\ubcf8-\uc7ac\ubc30\uce58\uc640-\ud55c\uad6d-\uc99d\uc2dc\uc758-\ubcc0\ud654-\ubd84\uc11d"
+    "2026-06-10-\uac70\ub300\ud55c-us-korea-yield-gap-\ud655\ub300\uac00-\ucd09\ubc1c\ud55c-\uae00\ub85c\ubc8c-\uc790\ubcf8-\uc7ac\ubc30\uce58\uc640-\ud55c\uad6d-\uc99d\uc2dc\uc758-\ubcc0\ud654-\ubd84\uc11d",
+    "2026-06-11-2026\ub144-kospi-tech-sell-off-\ud604\uc0c1-\uc678\uad6d\uc778-\uc790\uae08-\uc774\ud0c8\uacfc-\ud55c\uad6d-\uae30\uc220\uc8fc-\uc99d\uc2dc-\uc601\ud5a5",
+    "2026-06-11-\uae08\ub9ac-\uae09\ub4f1\uacfc-\ud658\uc728-\uc0c1\uc2b9\uc774-\ucd09\ubc1c\ud55c-yield-spike-pf-risk-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5-\ubd84\uc11d"
   ],
   "daily_impact_runs": [
     "2026-04-22",
@@ -231,7 +235,8 @@
     "2026-06-06",
     "2026-06-07",
     "2026-06-08",
-    "2026-06-09"
+    "2026-06-09",
+    "2026-06-10"
   ],
   "weekly_major_runs": [
     "2026-04-20_2026-04-26",
