@@ -96,7 +96,9 @@
     "2026-06-11:KR:kospi tech sell-off",
     "2026-06-11:KR:yield spike & pf risk",
     "2026-06-12:KR:ktb yields & real estate",
-    "2026-06-12:KR:usd/krw 1559"
+    "2026-06-12:KR:usd/krw 1559",
+    "2026-06-13:KR:bok rate hold",
+    "2026-06-13:KR:bok rate hold & gdp upgrade"
   ],
   "slugs": [
     "2026-04-23-bond-yields-pf-stress-\uac70\uc2dc\uacbd\uc81c-\ud638\uc870\uc758-\uc5ed\uc124\uacfc-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8",
@@ -195,7 +197,9 @@
     "2026-06-11-2026\ub144-kospi-tech-sell-off-\ud604\uc0c1-\uc678\uad6d\uc778-\uc790\uae08-\uc774\ud0c8\uacfc-\ud55c\uad6d-\uae30\uc220\uc8fc-\uc99d\uc2dc-\uc601\ud5a5",
     "2026-06-11-\uae08\ub9ac-\uae09\ub4f1\uacfc-\ud658\uc728-\uc0c1\uc2b9\uc774-\ucd09\ubc1c\ud55c-yield-spike-pf-risk-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5-\ubd84\uc11d",
     "2026-06-12-\uad6d\uace0\ucc44-\uae08\ub9ac-425-\uc804\ub9dd\uacfc-ktb-yields-real-estate-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\ubcc0\ud654",
-    "2026-06-12-\uc678\ud658\uc2dc\uc7a5-\ubcc0\ub3d9\uc131-\ud655\ub300-usdkrw-1559-\ub3c4\ub2ec\uc5d0-\ub530\ub978-\uc678\uad6d\uc778-\uc790\ubcf8-\uc774\ud0c8\uacfc-\uc99d\uc2dc-\ud30c\uae09-\ud6a8\uacfc"
+    "2026-06-12-\uc678\ud658\uc2dc\uc7a5-\ubcc0\ub3d9\uc131-\ud655\ub300-usdkrw-1559-\ub3c4\ub2ec\uc5d0-\ub530\ub978-\uc678\uad6d\uc778-\uc790\ubcf8-\uc774\ud0c8\uacfc-\uc99d\uc2dc-\ud30c\uae09-\ud6a8\uacfc",
+    "2026-06-13-bok-rate-hold-gdp-upgrade-k\uc790\ud615-\uc99d\uc2dc-\uc591\uadf9\ud654-\uacf5\uc2dd\ud654\uc5d0-\ub530\ub978-\ud3ec\ud2b8\ud3f4\ub9ac\uc624-\uc7ac\ud3b8-\uc804\ub7b5",
+    "2026-06-13-\ud55c\uad6d\uc740\ud589-bok-rate-hold-\uacb0\uc815\uc758-\uc774\uba74-\uac70\uc2dc-\uc9c0\ud45c-\ucc29\uc2dc\uc640-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\ub51c\ub808\ub9c8"
   ],
   "daily_impact_runs": [
     "2026-04-22",
@@ -241,7 +245,8 @@
     "2026-06-08",
     "2026-06-09",
     "2026-06-10",
-    "2026-06-11"
+    "2026-06-11",
+    "2026-06-12"
   ],
   "weekly_major_runs": [
     "2026-04-20_2026-04-26",
