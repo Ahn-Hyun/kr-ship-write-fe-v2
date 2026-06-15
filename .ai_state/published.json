@@ -102,7 +102,9 @@
     "2026-06-14:KR:bok rate hold",
     "2026-06-14:KR:kospi auto sector",
     "2026-06-15:KR:bok rate hold & real estate pf",
-    "2026-06-15:KR:bok semiconductor gdp upgrade"
+    "2026-06-15:KR:bok semiconductor gdp upgrade",
+    "2026-06-15:KR:construction investment",
+    "2026-06-15:KR:semiconductors"
   ],
   "slugs": [
     "2026-04-23-bond-yields-pf-stress-\uac70\uc2dc\uacbd\uc81c-\ud638\uc870\uc758-\uc5ed\uc124\uacfc-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8",
@@ -207,6 +209,8 @@
     "2026-06-14-bok-rate-hold-\uacb0\uc815\uacfc-k\uc790\ud615-\uc591\uadf9\ud654-\ubd80\ub3d9\uc0b0-pf-\ubd80\uc2e4-\ub9ac\uc2a4\ud06c-\ubc0f-\uc81c2\uae08\uc735\uad8c-\ud30c\uae09-\uacbd\ub85c",
     "2026-06-14-\uae30\uc544-\uc2e4\uc801\uacfc-\ud55c\ubbf8-\ubb34\uc5ed\ud611\uc815-\ud0c0\uacb0-\uc2dc\ub098\ub9ac\uc624\uc5d0-\ub530\ub978-\ucf54\uc2a4\ud53c-\uc790\ub3d9\ucc28-\uc139\ud130\uc758-\uad6c\uc870\uc801-\ubc38\ub958\uc5d0\uc774\uc158-\uc7ac\ud3c9\uac00",
     "2026-06-15-bok-semiconductor-gdp-upgrade-\ubc18\ub3c4\uccb4-\uc911\uc2ec\uc758-\uacbd\uc81c-\uc131\uc7a5\uacfc-\uc99d\uc2dc-\uc591\uadf9\ud654-\ub51c\ub808\ub9c8",
+    "2026-06-15-\ud55c\uad6d-\uacbd\uc81c\uc758-\uad6c\uc870\uc801-\ubcc0\uace1\uc810-\uc778\ud50c\ub808\uc774\uc158\uacfc-\uace0\uae08\ub9ac-\uc18d-k\uc790\ud615-\uac74\uc124-\ud22c\uc790-\uc591\uadf9\ud654-\ubc0f-ai-\uc778\ud504\ub77c-\uc804\ub9dd",
+    "2026-06-15-\ud55c\uad6d-\uc99d\uc2dc\uc758-\uad6c\uc870\uc801-\ubcc0\uace1\uc810-\uac70\uc2dc-\uacbd\uc81c-\uc545\uc7ac\ub97c-\uadf9\ubcf5\ud558\ub294-\ubc18\ub3c4\uccb4semiconductors-\uc0b0\uc5c5-\ubd84\uc11d",
     "2026-06-15-\ud55c\uad6d\uc740\ud589\uc758-\uace0\uae08\ub9ac-\uc7a5\uae30\ud654-\uae30\uc870\uc640-bok-rate-hold-real-estate-pf-\uad6c\uc870\uc870\uc815-\ud604\ud669"
   ],
   "daily_impact_runs": [
@@ -264,6 +268,7 @@
     "2026-05-04_2026-05-10",
     "2026-05-11_2026-05-17",
     "2026-05-18_2026-05-24",
-    "2026-06-01_2026-06-07"
+    "2026-06-01_2026-06-07",
+    "2026-06-08_2026-06-14"
   ]
 }
