@@ -110,7 +110,9 @@
     "2026-06-17:KR:bok k-shaped market",
     "2026-06-17:KR:hormuz oil shock",
     "2026-06-18:KR:fed hawkish pause",
-    "2026-06-18:KR:us fed hawkish pause"
+    "2026-06-18:KR:us fed hawkish pause",
+    "2026-06-19:KR:fomc hawkish hold",
+    "2026-06-19:KR:fomc hawkish hold & korean pf"
   ],
   "slugs": [
     "2026-04-23-bond-yields-pf-stress-\uac70\uc2dc\uacbd\uc81c-\ud638\uc870\uc758-\uc5ed\uc124\uacfc-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8",
@@ -223,7 +225,9 @@
     "2026-06-17-\ud55c\uad6d\uc740\ud589-\ud1b5\ud654\uc815\ucc45\uacfc-bok-k-shaped-market-\ubc18\ub3c4\uccb4-\uc218\ucd9c-\uc8fc\ub3c4\uc758-\uc99d\uc2dc-\uc591\uadf9\ud654-\ubd84\uc11d",
     "2026-06-17-\ud638\ub974\ubb34\uc988-\uc624\uc77c-\uc1fc\ud06c-\uc2dc\ub098\ub9ac\uc624-\uc911\ub3d9\ubc1c-\uc6d0\uc720-\uacf5\uae09-\uc704\uae30\uac00-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5\uc5d0-\ubbf8\uce58\ub294-\uc774\uc911-\ucda9\uaca9",
     "2026-06-18-2026\ub144-fed-hawkish-pause-\uc2dc\ub098\ub9ac\uc624\uc640-\ud55c\uad6d-\uc99d\uc2dc\uc758-\uac70\uc2dc\uc801-\ud328\ub7ec\ub2e4\uc784-\uc804\ud658-\ubc0f-\uc790\ubcf8-\uc774\ub3d9-\ubd84\uc11d",
-    "2026-06-18-2026\ub144-us-fed-hawkish-pause-\uc804\ub9dd\uacfc-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\ubcc0\uace1\uc810-\ubd84\uc11d"
+    "2026-06-18-2026\ub144-us-fed-hawkish-pause-\uc804\ub9dd\uacfc-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\ubcc0\uace1\uc810-\ubd84\uc11d",
+    "2026-06-19-fomc-hawkish-hold-korean-pf-\ub9e4\ud30c\uc801-\ub3d9\uacb0\uacfc-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5-\ub9ac\uc2a4\ud06c",
+    "2026-06-19-\uc5f0\uc900\uc758-fomc-hawkish-hold-\uae30\uc870\uac00-\ud55c\uad6d-\uc99d\uc2dc\uc758-\uad6c\uc870\uc801-\uc790\ubcf8-\uc774\ud0c8\uc5d0-\ubbf8\uce58\ub294-\ud30c\uae09-\ud6a8\uacfc-\ubd84\uc11d"
   ],
   "daily_impact_runs": [
     "2026-04-22",
@@ -275,7 +279,8 @@
     "2026-06-14",
     "2026-06-15",
     "2026-06-16",
-    "2026-06-17"
+    "2026-06-17",
+    "2026-06-18"
   ],
   "weekly_major_runs": [
     "2026-04-20_2026-04-26",
