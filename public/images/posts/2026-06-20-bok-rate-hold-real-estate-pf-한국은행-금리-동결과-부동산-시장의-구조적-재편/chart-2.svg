@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="580" viewBox="0 0 1000 580" role="img" aria-label="막대 그래프: 직접 부동산 PF 대출 132조 2천억 원, 보증 포함 시 160조 원, 유사 PF 포함 시 230조 원에 달하는 익스포저 규모.">
+<rect width="100%" height="100%" fill="#f8fafc" rx="10"/>
+<text x="110" y="44" font-size="20" font-weight="700" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#0f172a">한국 부동산 PF 익스포저 추산 규모 (2024년 2분기 기준)</text>
+<text x="110" y="68" font-size="13" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#64748b">조 원</text>
+<line x1="110" y1="100" x2="110" y2="480" stroke="#cbd5e1" stroke-width="1.5"/>
+<line x1="110" y1="480" x2="960" y2="480" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="102" y="484.00" text-anchor="end" font-size="12" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#94a3b8">0</text>
+<line x1="110" y1="396.67" x2="960" y2="396.67" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="102" y="400.67" text-anchor="end" font-size="12" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#94a3b8">57.5</text>
+<line x1="110" y1="313.33" x2="960" y2="313.33" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="102" y="317.33" text-anchor="end" font-size="12" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#94a3b8">115</text>
+<line x1="110" y1="230.00" x2="960" y2="230.00" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="102" y="234.00" text-anchor="end" font-size="12" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#94a3b8">172</text>
+<line x1="110" y1="146.67" x2="960" y2="146.67" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="102" y="150.67" text-anchor="end" font-size="12" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#94a3b8">230</text>
+<rect x="173.75" y="288.41" width="155.83" height="191.59" fill="#1d4ed8" rx="5" opacity="0.88"/>
+<text x="251.67" y="279.41" text-anchor="middle" font-size="13" font-weight="700" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#1d4ed8">132</text>
+<text x="251.67" y="506" text-anchor="middle" font-size="13" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#475569">직접 PF 대출</text>
+<rect x="457.08" y="248.12" width="155.83" height="231.88" fill="#0891b2" rx="5" opacity="0.88"/>
+<text x="535.00" y="239.12" text-anchor="middle" font-size="13" font-weight="700" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#0891b2">160</text>
+<text x="535.00" y="506" text-anchor="middle" font-size="13" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#475569">보증 포함</text>
+<rect x="740.42" y="146.67" width="155.83" height="333.33" fill="#059669" rx="5" opacity="0.88"/>
+<text x="818.33" y="137.67" text-anchor="middle" font-size="13" font-weight="700" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#059669">230</text>
+<text x="818.33" y="506" text-anchor="middle" font-size="13" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" fill="#475569">유사 PF 포함</text>
+</svg>
