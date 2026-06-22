@@ -117,6 +117,8 @@
     "2026-06-20:KR:bok rate hold & tech boom",
     "2026-06-21:KR:bok rate hold",
     "2026-06-21:KR:bok rate hold & gdp upgrade",
+    "2026-06-22:KR:elevated bond yields",
+    "2026-06-22:KR:kuic and foreign capital inflows",
     "2026-06-22:KR:middle east reconstruction",
     "2026-06-22:KR:seoul property polarization"
   ],
@@ -239,7 +241,9 @@
     "2026-06-21-\ud55c\uad6d\uc740\ud589-bok-rate-hold-gdp-upgrade-\uacb0\uc815\uacfc-k\uc790\ud615-\uacbd\uc81c\uc758-\uad6c\uc870\uc801-\ud55c\uacc4-\ubd84\uc11d",
     "2026-06-21-\ud55c\uad6d\uc740\ud589-bok-rate-hold-\uacb0\uc815\uc774-\ucd09\ubc1c\ud55c-k\uc790\ud615-\uc591\uadf9\ud654-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5-\uad6c\uc870\uc801-\uc7ac\ud3b8-\ubd84\uc11d",
     "2026-06-22-2026\ub144-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5-\ub300\ucd9c-\uaddc\uc81c\uac00-\uc2ec\ud654\uc2dc\ud0a8-seoul-property-polarization-\ubd84\uc11d",
-    "2026-06-22-middle-east-reconstruction-\uc9c0\uc815\ud559\uc801-\ud574\ube59\uc774-\uc774\ub044\ub294-\ud55c\uad6d-\uc99d\uc2dc\uc758-\uad6c\uc870\uc801-\ubcc0\uace1\uc810"
+    "2026-06-22-kuic-and-foreign-capital-inflows-\ud55c\ubbf8\uc804\ub7b5\ud22c\uc790\uacf5\uc0ac-\ucd9c\ubc94\uacfc-\ud55c\uad6d-\uc99d\uc2dc\uc758-\uad6c\uc870\uc801-\ubcc0\ud654",
+    "2026-06-22-middle-east-reconstruction-\uc9c0\uc815\ud559\uc801-\ud574\ube59\uc774-\uc774\ub044\ub294-\ud55c\uad6d-\uc99d\uc2dc\uc758-\uad6c\uc870\uc801-\ubcc0\uace1\uc810",
+    "2026-06-22-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\ud55c\uacc4\uc640-\uc0c1\uc2b9\ud55c-\uad6d\ucc44-\uae08\ub9acelevated-bond-yields\uc758-\ud30c\uae09-\ud6a8\uacfc"
   ],
   "daily_impact_runs": [
     "2026-04-22",
@@ -304,6 +308,7 @@
     "2026-05-11_2026-05-17",
     "2026-05-18_2026-05-24",
     "2026-06-01_2026-06-07",
-    "2026-06-08_2026-06-14"
+    "2026-06-08_2026-06-14",
+    "2026-06-15_2026-06-21"
   ]
 }
