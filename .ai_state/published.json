@@ -120,7 +120,9 @@
     "2026-06-22:KR:elevated bond yields",
     "2026-06-22:KR:kuic and foreign capital inflows",
     "2026-06-22:KR:middle east reconstruction",
-    "2026-06-22:KR:seoul property polarization"
+    "2026-06-22:KR:seoul property polarization",
+    "2026-06-23:KR:ktb yields & cre refinancing",
+    "2026-06-23:KR:usdkrw 1540 & kospi divergence"
   ],
   "slugs": [
     "2026-04-23-bond-yields-pf-stress-\uac70\uc2dc\uacbd\uc81c-\ud638\uc870\uc758-\uc5ed\uc124\uacfc-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\uc7ac\ud3b8",
@@ -243,7 +245,9 @@
     "2026-06-22-2026\ub144-\ubd80\ub3d9\uc0b0-\uc2dc\uc7a5-\ub300\ucd9c-\uaddc\uc81c\uac00-\uc2ec\ud654\uc2dc\ud0a8-seoul-property-polarization-\ubd84\uc11d",
     "2026-06-22-kuic-and-foreign-capital-inflows-\ud55c\ubbf8\uc804\ub7b5\ud22c\uc790\uacf5\uc0ac-\ucd9c\ubc94\uacfc-\ud55c\uad6d-\uc99d\uc2dc\uc758-\uad6c\uc870\uc801-\ubcc0\ud654",
     "2026-06-22-middle-east-reconstruction-\uc9c0\uc815\ud559\uc801-\ud574\ube59\uc774-\uc774\ub044\ub294-\ud55c\uad6d-\uc99d\uc2dc\uc758-\uad6c\uc870\uc801-\ubcc0\uace1\uc810",
-    "2026-06-22-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\ud55c\uacc4\uc640-\uc0c1\uc2b9\ud55c-\uad6d\ucc44-\uae08\ub9acelevated-bond-yields\uc758-\ud30c\uae09-\ud6a8\uacfc"
+    "2026-06-22-\ud55c\uad6d-\ubd80\ub3d9\uc0b0-pf-\uc2dc\uc7a5\uc758-\uad6c\uc870\uc801-\ud55c\uacc4\uc640-\uc0c1\uc2b9\ud55c-\uad6d\ucc44-\uae08\ub9acelevated-bond-yields\uc758-\ud30c\uae09-\ud6a8\uacfc",
+    "2026-06-23-ktb-yields-cre-refinancing-2026\ub144-\uc0c1\uc5c5\uc6a9-\ubd80\ub3d9\uc0b0-\ucc28\ud658-\ub9ac\uc2a4\ud06c\uc640-\uc2dc\uc7a5-\uc804\ub9dd",
+    "2026-06-23-usdkrw-1540-kospi-divergence-\uace0\ud658\uc728-\uc18d-\uc99d\uc2dc-\uac15\uc138\uc7a5\uc758-\uc5ed\uc124\uacfc-\uc591\uadf9\ud654"
   ],
   "daily_impact_runs": [
     "2026-04-22",
@@ -299,7 +303,8 @@
     "2026-06-18",
     "2026-06-19",
     "2026-06-20",
-    "2026-06-21"
+    "2026-06-21",
+    "2026-06-22"
   ],
   "weekly_major_runs": [
     "2026-04-20_2026-04-26",
